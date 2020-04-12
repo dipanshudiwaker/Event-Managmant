@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>EVENT</title>
+		<meta charset = "utf-8">
+		<meta name = "viewport" content = "width = device-width, initial-scale = 1.0, user-scalable = yes">
+		<style>
+			.div{
+				background-color: rgba(255,245,235,0.7);
+				margin: 10%;
+				padding: 10px;
+				margin-top: 0%
+
+			}
+		</style>
+	</head>
+	<body>
+		<h1  style="font-size: 50pxs;text-align: center;"><b>EVENT DETAILS</b></h1>
+		<div class="div">
+
+		<div class="container">
+			<h4> CHOOSE WHAT SUITS YOUR EVENT BEST </h4>
+		<select name="EVENT TYPES">
+			<option value="SPORTS" size="30px">SPORTS</option>
+			<option value="CULTURAL">CULTURAL</option>
+			<option value="CONFERENCE">CONFERENCE</option>
+			<option value="RELIGIOUS">RELIGIOUS</option>
+		</select><br><br>
+	
+	
+		<select name=" CHOICES OF SERVICES  ">
+		<option value="FULL EVENT "> FULL EVENT</option>
+		<option value="FOOD ORGANIZATION"> FOOD ORGANIZATION </option>
+		<option value="TRANSPORT SERVICES"> TRANSPORT SERVICES </option>
+		<option value="LOGGING SERVICES"> LOGGONG SERVICES </option>
+			</select>
+  			<h1>Start Date</h1>
+    		<input id="startDate" type ="date">
+  			<br/>
+   			<h1>End Date</h1>
+    		<input id="endDate" type ="date">
+  			<br>
+  			<h1>budget</h1>
+  			<input type="number" id="fee">
+  			<button id="submit" onclick="clicks()">submit</button>
+  			<h1>Total Days: <span id="totalDays"></span></h1>
+  			<h1>Total fee to pay: <span id="totalFees"></span></h1>
+  			
+		</div>
+		<script>
+			const setup = () => {
+  				let startDate = document.getElementById('startDate').value;
+  				let endDate = document.getElementById('endDate').value;
+  				let fees = document.getElementById('fee').value;
+  				const findTheDifferenceBetweenTwoDates = (startDate, endDate) => {
+  					startDate = new Date(startDate);
+    				endDate = new Date(endDate);
+    				let timeDifference = Math.abs(endDate.getTime() - startDate.getTime());
+    				let millisecondsInADay = (1000 * 3600 * 24);
+	    			let differenceOfDays = Math.ceil(timeDifference / millisecondsInADay);
+	    			return differenceOfDays;
+  				}
+  				let result = findTheDifferenceBetweenTwoDates(startDate, endDate);
+  				document.getElementById('totalDays').innerHTML = result;
+  				let totalFees = fees * result;
+  				document.getElementById('totalFees').innerHTML = totalFees;
+			}
+			function clicks(){
+				setup();
+			}
+		</script>
+		</div>
+	</body>
+</html>

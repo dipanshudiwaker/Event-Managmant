@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EVENT MANAGEMENT</title>
+<style >
+	body{
+		background-color:  black;
+		background-attachment: scroll;
+		background-repeat: no-repeat;
+		margin: 0%;
+		padding: 0%;
+			}
+	.nav{
+		width: 100%;
+		height: 100%;
+		text-align: right;
+		background-color:  rgba(255,255,255,0.6);
+		margin:0px;
+		padding: 10px; 
+
+	}
+     .nav a{
+		color: white;
+		text-decoration: none;
+		padding: 10px;
+	}
+	.nav a:hover{
+		opacity: 0.4;
+	}
+	.footer {
+   position: static;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: rgb(54, 54, 54);
+   color: white;
+   text-align: center;
+   padding: 10px;
+   margin: 10px;
+   font-family: sans-serif;
+}
+.footer h1{
+
+	text-decoration:none; 
+}
+.grow{
+	background-color: rgb(255,245,250);
+	margin: 0%;
+	margin-top: 10%;
+	padding: 10%;
+	width: 100%;
+	position: relative;
+	 text-align: center;
+  color: black;
+}
+.table{
+	text-align: left;
+width: 100%;
+padding-left: 15%;
+padding-right: 15%;
+color: lightblue;
+}
+th{
+	
+	width: 20%;
+}
+td{
+	vertical-align: top;
+}
+</style>
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 30px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+
+
+
+<body >
+	</head>
+<div >
+<h1 style="color: rgb(192,192,192);">EVENT MANAGEMENT</h1>
+</div>
+	<div >
+	    <div class="nav">
+			<a ><b style="color: red;">H</b>OME</a>
+			<a href="file:///C:/Users/Amarsh%20Raj/Desktop/progect/eventlogin.html">LOGIN</a>
+				<a href="file:///C:/Users/Amarsh%20Raj/Desktop/progect/events.html">EVENTS</a>	
+			<a href="file:///C:/Users/Amarsh%20Raj/Desktop/progect/feedback.html">FEEDBACK</a>
+		
+		</div>
+		<h1 style="font-size: 25px;color: white;text-align: center;">EVENTS THAT WE CONDUCT</h1>
+		<div>
+
+		<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 </div>
+  <img src="https://i.ytimg.com/vi/fUUdTI8qtMc/maxresdefault.jpg" style="width:100% ">
+  <div class="text">ANIVERSERY EVENT</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 </div>
+  <img src="https://i.ytimg.com/vi/zGRJJNha2Eo/maxresdefault.jpg" style="width:100%">
+  <div class="text">BIRTHDAY EVENT</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 </div>
+  <img src="https://www.specialevents.com/sites/specialevents.com/files/Indian_Wedding_Hands_2019_0.jpg" style="width:100% ">
+  <div class="text">MARRIAGE EVENT</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">4 </div>
+  <img src="https://files.northernbeaches.nsw.gov.au/sites/default/files/images/general-information/sports-associations/sports-associations.jpg" style="width:100%">
+  <div class="text">SPORTS EVENT</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">5 </div>
+  <img src="https://holydelights.com/blog/wp-content/uploads/2016/08/img_3409.jpg" style="width:100%">
+  <div class="text">OTHER EVENTS</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>
+		</div>
+    </div>
+    <div class="grow" style= "background-image:url(https://techcrunch.com/wp-content/uploads/2016/03/shutterstock_260323670.jpg?w=730&crop=1); background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; 
+    "style="width: 100%;font-family: sans-serif;" >
+    	
+    <h1 style="text-align: center;font-size: 45px;color: skyblue;">Wedding planners</h1><br>
+    	<div style="padding-left: 20%;padding-right: 20%;">
+<p>We would be happy to assist you on your wedding in India!  We are professional wedding planners, based near jhalender, India. We have more than 10 years experience, and we travel all over India for our clients! Every wedding and couple is unique, and because of that we organize bespoke weddings<br><br><br>We can arrange legal civil and Arrange weddings, symbolic weddings. We can arrange the marriage outdoors, in beautiful surroundings. We can help with both luxury weddings to more casual affairs, and we guarantee that getting married in India will be an unforgettable experience</p></div>
+    </div>
+    <div style="width: 100%; background-color: white;color: black;padding: 10px;    font-family: sans-serif;
+">
+    	<h1 style="text-align: center;font-size: 45px;color: skyblue;">WELCOME TO GLOBAL NEXUS</h1>
+<div style="padding-left: 20%;padding-right: 20%;"><p>Global Nexus – Best Event Organizer & Management Company in Delhi<br><br><br>
+Exceptional events just don’t happen. They require creative thinking, precise planning, and meticulous attention to detail. Whether the event is to organize conference, reward your sales and management team, organizing the cultural show, promotes the brand, raise funds, or find new customers, Global Nexus will help you to achieve your goal. If you are looking for an event planning company in delhi to organize events with VOW factor, look no further. As top event organizer in Noida and Delhi, we take extra effort to understand the event requirements.<br><br><br><br>
+
+ 
+
+Global Nexus is expertise in providing end to end solution in Event Management Services. We organize events for various Government and Corporate organizations PAN- India. We believe in “Static to Dynamic” while providing various services in the most effective manner. We nurture the value of Quality over Quantity. Our extensive experience in organizing numerous successful events makes us the best event organizer in Delhi NCR.<br><br><br>
+
+ 
+
+We work for the Government of India for VIP and VVIP events, including events for the President, the Vice President and the Prime Minister.<br><br><br>
+
+ 
+
+We have experience of organizing different kinds of events like conferences, workshops, award functions, conclaves and many more for various ministries as well as for reputed corporate clients. We are also engaged in various brand activities as well as cultural events. As Best Event Management company in Delhi NCR, we have organized numerous events.<br><br>
+
+We provide gamut of services to suit your taste, style, budget and requirements. As one of the top event management companies in Delhi NCR, we can handle all aspects of events without any hassle.</p></div>
+    </div>
+	<div>
+	<footer class="footer">
+		
+			
+<table class="table" >
+  <tr style="font-size: 25px;">
+    
+    <th><br>QUICK LINKS<br><br><br></th> 
+    <th>CONTACT US</th>
+    <th>ABOUT US </th>
+  </tr>
+  <tr style="color: orange;">
+    <td>HOME<br><br>LOGIN<br><br>BLOG</td>
+    <td "><a href="https://www.facebook.com/"style="color: orange;text-decoration: none;">facebook</a><br><br><a href="https://www.instagram.com/"style="color: orange;text-decoration: none;">instgram</a><br><br>6376560586</td>
+    <td style="color: white;">Countrywide Events is the top event management company in Delhi/NCR, India<br> committed to serve varied needs of the businesses.<br> Be it corporate events, social events,<br> wedding events, sports events, MICE or activation and promotion,<br> we deliver nothing less than the best event<br>s management solution</td>
+  </tr>
+</table>
+		
+	</footer>
+</div>
+</body>
+</html>
