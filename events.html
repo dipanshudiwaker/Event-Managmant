@@ -6,41 +6,56 @@
 		<meta name = "viewport" content = "width = device-width, initial-scale = 1.0, user-scalable = yes">
 		<style>
 			.div{
-				background-color: rgba(255,245,235,0.7);
+				background-color:pink;
 				margin: 10%;
 				padding: 10px;
-				margin-top: 0%
+				margin-top: 0%;
+				border: 0px solid #888;
 
+			}
+
+			.CHOICES{
+				width: 50%;
+				height: 30px;
+			}
+		
+
+			.container button{
+				margin-top: 5%;
+				width: 100%;
+				background-color: green;
 			}
 		</style>
 	</head>
-	<body>
+	<body >
 		<h1  style="font-size: 50pxs;text-align: center;"><b>EVENT DETAILS</b></h1>
 		<div class="div">
 
 		<div class="container">
-			<h4> CHOOSE WHAT SUITS YOUR EVENT BEST </h4>
-		<select name="EVENT TYPES">
+			<h3> CHOOSE WHAT SUITS YOUR EVENT BEST </h3>
+			<label>EVENT TYPES</label>
+		<select class="EVENT TYPES">
 			<option value="SPORTS" size="30px">SPORTS</option>
 			<option value="CULTURAL">CULTURAL</option>
 			<option value="CONFERENCE">CONFERENCE</option>
 			<option value="RELIGIOUS">RELIGIOUS</option>
 		</select><br><br>
 	
-	
-		<select name=" CHOICES OF SERVICES  ">
+		<label>SERVICES</label>
+		<select class="CHOICES">
 		<option value="FULL EVENT "> FULL EVENT</option>
 		<option value="FOOD ORGANIZATION"> FOOD ORGANIZATION </option>
 		<option value="TRANSPORT SERVICES"> TRANSPORT SERVICES </option>
 		<option value="LOGGING SERVICES"> LOGGONG SERVICES </option>
 			</select>
-  			<h1>Start Date</h1>
+			<br>
+  			<label>Starting Date</label>
     		<input id="startDate" type ="date">
   			<br/>
-   			<h1>End Date</h1>
+   			<label>Ending Date</label>
     		<input id="endDate" type ="date">
   			<br>
-  			<h1>budget</h1>
+  			<label>budget</label>
   			<input type="number" id="fee">
   			<button id="submit" onclick="clicks()">submit</button>
   			<h1>Total Days: <span id="totalDays"></span></h1>
